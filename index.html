@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigate 12 Pro - Coming Soon</title>
+    <style>
+        /* මූලික සැකසුම් */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* උඩම තීරුව (Navigation) */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* Hero Section - ප්‍රධාන කොටස */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            min-height: 85vh;
+        }
+
+        /* පින්තූරය වම් පැත්තට */
+        .hero-image {
+            flex: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .hero-image img {
+            max-width: 110%;
+            height: auto;
+            margin-left: -50px;
+            drop-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* විස්තර දකුණු පැත්තට */
+        .hero-text {
+            flex: 1;
+            padding: 50px 80px 50px 20px;
+            text-align: left;
+        }
+
+        .hero-text h1 {
+            font-size: 4.5rem;
+            margin: 0;
+            color: #1a2639;
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .hero-text .version {
+            color: #2e86de; /* නිල් පාට */
+        }
+
+        /* Coming Soon ස්ටයිල් එක */
+        .coming-soon {
+            font-size: 3rem;
+            color: #7f8c8d;
+            font-weight: 300;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* බට්න් එක */
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(90deg, #10ac84 0%, #1dd1a1 100%);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            font-weight: bold;
+        }
+        .btn-download:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* පහළ විස්තර කොටස */
+        .features {
+            padding: 80px 10%;
+            text-align: center;
+            background-color: white;
+        }
+        .features h3 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        .feature-card {
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .feature-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        .feature-card h4 {
+            font-size: 1.5rem;
+            color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding-top: 50px;
+                text-align: center;
+            }
+            .hero-image img {
+                margin-left: 0;
+                max-width: 90%;
+            }
+            .hero-text {
+                padding: 30px;
+                text-align: center;
+            }
+        }
+
+        /* ෆූටර් (පහළ තීරුව) */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* නිර්මාණකරුගේ නම සඳහා */
+        .creator-name {
+            font-size: 0.9rem; /* අකුරු ප්‍රමාණය පොඩි කළා */
+            color: #bdc3c7; /* ටිකක් ලා පාටක් දුන්නා */
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Nevigate OS</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Support</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+
+        <!-- පින්තූරය වම් පැත්තේ -->
+        <div class="hero-image">
+            <img src="pc.png" alt="Nevigate OS Laptop Preview">
+        </div>
+
+        <!-- විස්තර දකුණු පැත්තේ -->
+        <div class="hero-text">
+            <h1>Nevigate <br><span class="version">12 Pro</span></h1>
+
+            <span class="coming-soon">Coming Soon</span>
+
+            <p>Experience the ultimate speed and stability built on EndeavourOS. A beautiful interface designed for creators, developers, and you.</p>
+
+            <a href="#" class="btn-download">Download Preview ISO</a>
+            <p style="font-size: 0.9rem; margin-top: 15px; color: #666;">* Version 0.1 Beta Release</p>
+        </div>
+
+    </div>
+
+    <div class="features">
+        <h3>Why Choose Nevigate?</h3>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🚀 Super Fast</h4>
+                <p>Optimized for performance. Your apps open instantly with our lightweight core.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🛡️ Secure</h4>
+                <p>Built on a secure Linux foundation. Your data stays yours, always.</p>
+            </div>
+            <div class="feature-card">
+                <h4>✨ Stunning UI</h4>
+                <p>A modern, clean interface that makes using your computer a joy every day.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nevigate OS Project.</p>
+        <!-- ඔන්න මෙතන තමයි නම දැම්මේ -->
+        <p class="creator-name">Created by Madushan Weerasooriya</p>
+    </footer>
+
+</body>
+</html>
